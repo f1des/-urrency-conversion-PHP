@@ -17,7 +17,6 @@ if (isset($_GET['date'])) {
 
 print_r($date);
 
-//$date = date('d/m/Y'); // текущая дата
 $url = 'https://www.cbr.ru/scripts/XML_daily.asp?date_req=' . $date;
 $contents = file_get_contents($url);
 //$contents = iconv('windows-1251', 'utf8', $contents);
